@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Remover</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+</head>
+
+<body class="bg-gray-900 text-white">
+    <div class="flex flex-col items-center justify-center h-screen">
+        <label for="imageInput"
+            class="mb-4 p-6 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 border rounded-lg cursor-pointer shadow-md hover:shadow-lg text-white transition-all duration-300">
+            <span class="text-2xl font-semibold">Select an Image</span>
+            <input type="file" id="imageInput" accept="image/*" class="hidden">
+        </label>
+
+        <button id="removeBackgroundBtn"
+            class="bg-blue-500 hover:bg-blue-700 active:bg-blue-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline-blue transition-all duration-300 mt-4">
+            Remove Background
+        </button>
+
+        <img id="imagePreview" alt="Image Preview"
+            class="mt-8 max-w-full rounded-md overflow-hidden shadow-md hidden">
+
+        <div id="loadingPopup"
+            class="fixed top-0 left-0 h-screen w-screen flex justify-center items-center bg-gray-800 bg-opacity-50 hidden">
+            <div class="bg-black p-6 rounded-md shadow-md text-center">
+                <img src="/assets/gif/loading.gif" alt="Loading..." class="w-16 h-16 mx-auto mb-4">
+                <div class="relative pt-1">
+                    <div class="flex mb-2 items-center justify-between">
+                        <div>
+                            <span
+                                class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-teal-600 bg-teal-200">
+                                Processing
+                            </span>
+                        </div>
+                        <div class="text-right">
+                            <span class="text-xs font-semibold inline-block text-teal-600">
+                                <span id="loadingProgressValue">0</span>%
+                            </span>
+                        </div>
+                    </div>
+                    <div class="flex mb-2">
+                        <div class="flex flex-col text-center">
+                            <div
+                                class="w-10 h-2 bg-teal-500 rounded-full animate-pulse"
+                                id="loadingProgressBar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="downloadSection"
+            class="mt-8 max-w-full rounded-md overflow-hidden shadow-md hidden">
+            <button id="downloadBtn"
+                class="bg-green-500 hover:bg-green-700 active:bg-green-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline-green transition-all duration-300">
+                Download Image
+            </button>
+        </div>
+
+        <img id="outputImage" alt="Output Image"
+            class="mt-8 max-w-full rounded-md overflow-hidden shadow-md hidden">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/assets/main.js"></script>
+</body>
+
+</html>
