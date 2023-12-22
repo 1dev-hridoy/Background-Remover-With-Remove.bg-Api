@@ -14,7 +14,7 @@ A web application designed to effortlessly remove the background from images usi
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/your-username/Background-Remover-With-Remove.bg-Api.git
+   git clone https://github.com/1dev-hridoy/Background-Remover-With-Remove.bg-Api.git
 Open the Application:
 
 Open the index.html file in a web browser.
