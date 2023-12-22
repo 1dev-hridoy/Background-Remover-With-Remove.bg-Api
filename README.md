@@ -48,3 +48,8 @@ Contributions, issue reports, and suggestions for improvement are welcome!
 
 ```bash
 Please replace "your-username" with your GitHub username in the clone URL, and update the "YOUR_API_KEY" placeholder with your remove.bg API key in the `main.js` file.
+
+
+
+
+![Website Screenshot](/ssRemoved.png
