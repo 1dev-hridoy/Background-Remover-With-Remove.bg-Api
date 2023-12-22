@@ -36,6 +36,7 @@ API Key
 To use the remove.bg API, obtain an API key from remove.bg. Update the apiKey variable in the main.js file with your API key.
 ```bash
 const apiKey = 'YOUR_API_KEY';
+
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
@@ -44,5 +45,6 @@ remove.bg for providing the background removal API.
 Tailwind CSS for the utility-first CSS framework.
 SweetAlert2 for the beautiful and customizable alerts.
 Contributions, issue reports, and suggestions for improvement are welcome!
+
 ```bash
 Please replace "your-username" with your GitHub username in the clone URL, and update the "YOUR_API_KEY" placeholder with your remove.bg API key in the `main.js` file.
